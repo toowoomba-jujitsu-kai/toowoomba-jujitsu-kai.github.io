@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Discover Toowoomba Jujitsu Kai. Learn martial arts,
+          develop confidence, improve fitness and build practical skills.">
+
+    <meta name="theme-color" content="#111111">
+
+    <title>Toowoomba Jujitsu Kai | Strength Through Practice</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <style>
+        :root {
+            --black: #111111;
+            --dark: #191919;
+            --panel: #222222;
+            --white: #f7f5f0;
+            --muted: #b7b5b0;
+            --red: #d83932;
+            --red-dark: #a92520;
+            --line: rgba(255,255,255,0.12);
+            --width: 1180px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            background: var(--black);
+            color: var(--white);
+            font-family: "DM Sans", sans-serif;
+            line-height: 1.7;
+        }
+
+        body, button, a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        button {
+            font: inherit;
+        }
+
+        .container {
+            width: min(var(--width), 90%);
+            margin-inline: auto;
+        }
+
+        .eyebrow {
+            color: var(--red);
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        h1, h2, h3 {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 700;
+            line-height: 1.02;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: clamp(3.5rem, 9vw, 7.4rem);
+            letter-spacing: -0.035em;
+        }
+
+        h2 {
+            font-size: clamp(2.7rem, 6vw, 4.7rem);
+            letter-spacing: -0.02em;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            color: var(--muted);
+        }
+
+        .section {
+            padding: 110px 0;
+        }
+
+        .section-heading {
+            max-width: 700px;
+            margin-bottom: 52px;
+        }
+
+        .section-heading p {
+            margin-top: 20px;
+            max-width: 590px;
+        }
+
+        .accent {
+            color: var(--red);
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            min-height: 52px;
+            padding: 14px 24px;
+            background: var(--red);
+            color: white;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            border: 1px solid var(--red);
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .button:hover {
+            background: var(--red-dark);
+            transform: translateY(-2px);
+        }
+
+        .button-outline {
+            background: transparent;
+            border-color: rgba(255,255,255,0.45);
+        }
+
+        .button-outline:hover {
+            background: white;
+            border-color: white;
+            color: var(--black);
+        }
+
+        /* Navigation */
+
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(17,17,17,0.95);
+            border-bottom: 1px solid var(--line);
+            backdrop-filter: blur(12px);
+        }
+
+        .nav {
+            min-height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            min-width: 0;
+        }
+
+        .brand-mark {
+            width: 44px;
+            height: 44px;
+            display: grid;
+            place-items: center;
+            background: var(--red);
+            color: white;
+            font-family: "Barlow Condensed", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .brand-name {
+            font-family: "Barlow Condensed", sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            line-height: 1.05;
+            text-transform: uppercase;
+        }
+
+        .brand-name span {
+            display: block;
+            color: var(--muted);
+            font-family: "DM Sans", sans-serif;
+            font-size: 0.64rem;
+            font-weight: 500;
+            letter-spacing: 0.14em;
+            margin-top: 5px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 27px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #dedbd5;
+        }
+
+        .nav-links a:hover {
+            color: white;
+        }
+
+        .nav-links .nav-cta {
+            padding: 12px 17px;
+            background: var(--red);
+            color: white;
+        }
+
+        .menu-toggle {
+            display: none;
+            border: 1px solid var(--line);
+            background: transparent;
+            color: white;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        /* Hero */
+
+        .hero {
+            min-height: 690px;
+            min-height: min(780px, calc(100svh - 82px));
+            display: flex;
+            align-items: center;
+            position: relative;
+            isolation: isolate;
+            overflow: hidden;
+            background:
+                linear-gradient(90deg,
+                    rgba(12,12,12,0.97) 0%,
+                    rgba(12,12,12,0.85) 45%,
+                    rgba(12,12,12,0.35) 100%),
+                linear-gradient(0deg,
+                    rgba(12,12,12,0.7),
+                    transparent 45%),
+                url("https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=2000&q=85")
+                center 38% / cover;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            background: linear-gradient(
+                135deg,
+                transparent 55%,
+                rgba(216,57,50,0.12)
+            );
+        }
+
+        .hero-content {
+            padding: 100px 0;
+            max-width: 850px;
+        }
+
+        .hero .eyebrow {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .hero .eyebrow::before {
+            content: "";
+            width: 35px;
+            height: 2px;
+            background: var(--red);
+        }
+
+        .hero h1 {
+            max-width: 850px;
+        }
+
+        .hero h1 span {
+            color: var(--red);
+            display: block;
+        }
+
+        .hero-description {
+            max-width: 520px;
+            margin-top: 25px;
+            font-size: 1.05rem;
+            color: #dedbd5;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 35px;
+        }
+
+        .hero-note {
+            margin-top: 55px;
+            padding-top: 20px;
+            border-top: 1px solid var(--line);
+            max-width: 450px;
+            font-size: 0.78rem;
+        }
+
+        /* Intro strip */
+
+        .intro-strip {
+            background: var(--red);
+            padding: 20px 0;
+        }
+
+        .intro-strip-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .intro-strip p {
+            color: white;
+            font-weight: 600;
+        }
+
+        .intro-strip a {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(255,255,255,0.6);
+        }
+
+        /* About */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-visual {
+            position: relative;
+            min-height: 480px;
+            background:
+                linear-gradient(0deg, rgba(0,0,0,0.4), transparent),
+                url("https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=1100&q=85")
+                center / cover;
+        }
+
+        .about-visual::before {
+            content: "";
+            position: absolute;
+            inset: 18px -18px -18px 18px;
+            border: 1px solid var(--red);
+            z-index: -1;
+        }
+
+        .about-caption {
+            position: absolute;
+            left: 24px;
+            bottom: 24px;
+            right: 24px;
+            padding: 20px;
+            background: rgba(17,17,17,0.88);
+            border-left: 3px solid var(--red);
+        }
+
+        .about-caption strong {
+            font-family: "Barlow Condensed", sans-serif;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+
+        .about-copy p {
+            margin-top: 20px;
+        }
+
+        .about-copy .button {
+            margin-top: 30px;
+        }
+
+        /* Values */
+
+        .values {
+            background: var(--dark);
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .card {
+            padding: 32px;
+            background: var(--panel);
+            border: 1px solid var(--line);
+            transition: transform 0.25s, border-color 0.25s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--red);
+        }
+
+        .card-number {
+            color: var(--red);
+            font-family: "Barlow Condensed", sans-serif;
+            font-size: 2.6rem;
+            font-weight: 700;
+            margin-bottom: 32px;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 0.92rem;
+        }
+
+        /* Training */
+
+        .training-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: start;
+        }
+
+        .training-copy > p {
+            margin-top: 20px;
+        }
+
+        .training-list {
+            list-style: none;
+            margin-top: 30px;
+        }
+
+        .training-list li {
+            display: flex;
+            gap: 15px;
+            padding: 17px 0;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .training-list li::before {
+            content: "↗";
+            color: var(--red);
+            font-size: 1.15rem;
+            font-weight: 700;
+        }
+
+        .training-panel {
+            background: var(--panel);
+            border-top: 3px solid var(--red);
+            padding: 35px;
+        }
+
+        .training-panel h3 {
+            margin-bottom: 18px;
+        }
+
+        .training-panel p {
+            margin-bottom: 20px;
+        }
+
+        .training-panel .button {
+            width: 100%;
+        }
+
+        .small-note {
+            font-size: 0.78rem;
+            margin-top: 18px;
+        }
+
+        /* Call to action */
+
+        .cta {
+            background:
+                linear-gradient(90deg,
+                    rgba(15,15,15,0.96),
+                    rgba(15,15,15,0.78)),
+                url("https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=1800&q=85")
+                center / cover;
+            border-block: 1px solid var(--line);
+        }
+
+        .cta-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .cta h2 {
+            max-width: 650px;
+        }
+
+        .cta p {
+            margin-top: 20px;
+            max-width: 550px;
+        }
+
+        .cta .button {
+            flex-shrink: 0;
+        }
+
+        /* FAQ */
+
+        .faq-layout {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 80px;
+        }
+
+        .faq-intro p {
+            margin-top: 20px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--line);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 23px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            text-align: left;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .faq-question span:last-child {
+            color: var(--red);
+            font-size: 1.5rem;
+        }
+
+        .faq-answer {
+            padding: 0 0 23px;
+        }
+
+        .faq-answer[hidden] {
+            display: none;
+        }
+
+        /* Contact */
+
+        .contact {
+            background: var(--dark);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-copy p {
+            margin-top: 20px;
+            max-width: 530px;
+        }
+
+        .contact-details {
+            display: grid;
+            gap: 18px;
+        }
+
+        .contact-detail {
+            padding: 23px;
+            background: var(--panel);
+            border-left: 3px solid var(--red);
+        }
+
+        .contact-detail strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact-detail p {
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+
+        .footer {
+            padding: 30px 0;
+            border-top: 1px solid var(--line);
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer p {
+            font-size: 0.78rem;
+        }
+
+        .footer a {
+            color: var(--muted);
+            font-size: 0.8rem;
+        }
+
+        /* Reveal animations */
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(18px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+
+            .reveal {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        /* Tablet and mobile */
+
+        @media (max-width: 900px) {
+            .nav-links {
+                gap: 15px;
+            }
+
+            .nav-links a {
+                font-size: 0.72rem;
+            }
+
+            .about-grid,
+            .training-grid,
+            .faq-layout,
+            .contact-grid {
+                gap: 45px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .card:last-child {
+                grid-column: 1 / -1;
+            }
+
+            .cta-inner {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 680px) {
+            .section {
+                padding: 75px 0;
+            }
+
+            .nav {
+                min-height: 72px;
+            }
+
+            .brand-mark {
+                width: 38px;
+                height: 38px;
+            }
+
+            .brand-name {
+                font-size: 1.05rem;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                padding: 20px 5% 25px;
+                background: var(--dark);
+                border-bottom: 1px solid var(--line);
+                align-items: stretch;
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .nav-links a {
+                display: block;
+                padding: 13px 0;
+                font-size: 0.9rem;
+            }
+
+            .nav-links .nav-cta {
+                padding: 13px 16px;
+                text-align: center;
+                margin-top: 8px;
+            }
+
+            .hero {
+                min-height: 690px;
+                min-height: 78svh;
+                background-position: 58% center;
+            }
+
+            .hero-content {
+                padding: 75px 0;
+            }
+
+            .hero-description {
+                font-size: 0.95rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .hero-buttons .button {
+                width: 100%;
+            }
+
+            .hero-note {
+                margin-top: 35px;
+            }
+
+            .intro-strip-inner {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .about-grid,
+            .training-grid,
+            .faq-layout,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-grid {
+                gap: 50px;
+            }
+
+            .about-visual {
+                min-height: 360px;
+                margin-right: 10px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .card:last-child {
+                grid-column: auto;
+            }
+
+            .card {
+                padding: 27px;
+            }
+
+            .card-number {
+                margin-bottom: 20px;
+            }
+
+            .training-panel {
+                padding: 27px;
+            }
+
+            .contact-grid {
+                gap: 35px;
+            }
+
+            .footer-inner {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav container" aria-label="Main navigation">
+
+            <a href="#home" class="brand" aria-label="Toowoomba Jujitsu Kai home">
+                <span class="brand-mark">KAI</span>
+                <span class="brand-name">
+                    Toowoomba Jujitsu Kai
+                    <span>DISCIPLINE · RESPECT · GROWTH</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="nav-links">
+                Menu ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#training">Training</a></li>
+                <li><a href="#values">Our values</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="#contact" class="nav-cta">Get in touch ↗</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+
+                    <p class="eyebrow">Toowoomba · Queensland</p>
+
+                    <h1>
+                        Strength through
+                        <span>practice.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Discover the art of jujitsu. Develop your skills,
+                        build confidence and challenge yourself through
+                        dedicated martial arts training.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#contact" class="button">
+                            Start your journey ↗
+                        </a>
+
+                        <a href="#about" class="button button-outline">
+                            Discover our dojo
+                        </a>
+                    </div>
+
+                    <p class="hero-note">
+                        A place to learn, practise and grow —
+                        one step at a time.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Intro strip -->
+        <div class="intro-strip">
+            <div class="container intro-strip-inner">
+                <p>Your journey in martial arts starts with a single step.</p>
+                <a href="#training">Explore training ↓</a>
+            </div>
+        </div>
+
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container about-grid">
+
+                <div class="about-visual reveal">
+                    <div class="about-caption">
+                        <strong>More than a martial art.</strong>
+                        <p>A practice built on patience and perseverance.</p>
+                    </div>
+                </div>
+
+                <div class="about-copy reveal">
+                    <p class="eyebrow">Welcome to our dojo</p>
+
+                    <h2>
+                        Learn with purpose.
+                        <span class="accent">Grow with every class.</span>
+                    </h2>
+
+                    <p>
+                        Jujitsu is a martial art that rewards patience,
+                        awareness and consistent practice. It offers
+                        opportunities to develop physical skills while
+                        learning the importance of respect, self-control
+                        and perseverance.
+                    </p>
+
+                    <p>
+                        At Toowoomba Jujitsu Kai, we want our website
+                        to be the beginning of your journey: a place
+                        to learn about our dojo, discover our approach
+                        and find out how to get involved.
+                    </p>
+
+                    <a href="#contact" class="button">
+                        Find out more ↗
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Values -->
+        <section class="section values" id="values">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="eyebrow">The foundations</p>
+                    <h2>
+                        Stronger in skill.
+                        <span class="accent">Stronger in character.</span>
+                    </h2>
+                    <p>
+                        Martial arts is about more than learning techniques.
+                        The lessons developed through practice can extend
+                        well beyond the dojo.
+                    </p>
+                </div>
+
+                <div class="cards">
+
+                    <article class="card reveal">
+                        <div class="card-number">01</div>
+                        <h3>Discipline</h3>
+                        <p>
+                            Build good habits through regular practice,
+                            patience and a commitment to continual learning.
+                        </p>
+                    </article>
+
+                    <article class="card reveal">
+                        <div class="card-number">02</div>
+                        <h3>Confidence</h3>
+                        <p>
+                            Develop confidence by facing challenges,
+                            learning new skills and recognising your progress.
+                        </p>
+                    </article>
+
+                    <article class="card reveal">
+                        <div class="card-number">03</div>
+                        <h3>Respect</h3>
+                        <p>
+                            Value your training partners, listen carefully
+                            and contribute to a positive training environment.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Training -->
+        <section class="section" id="training">
+            <div class="container training-grid">
+
+                <div class="training-copy reveal">
+                    <p class="eyebrow">Your martial arts journey</p>
+
+                    <h2>
+                        Every expert
+                        <span class="accent">starts somewhere.</span>
+                    </h2>
+
+                    <p>
+                        Taking the first step can feel daunting.
+                        The best way to discover whether jujitsu is right
+                        for you is to learn about the training available
+                        and speak with the dojo.
+                    </p>
+
+                    <ul class="training-list">
+                        <li>Learn at a pace appropriate to your experience.</li>
+                        <li>Develop coordination and physical skills.</li>
+                        <li>Practise technique and mindful movement.</li>
+                        <li>Build knowledge through consistent training.</li>
+                    </ul>
+                </div>
+
+                <aside class="training-panel reveal">
+                    <p class="eyebrow">Take the next step</p>
+
+                    <h3>Interested in training?</h3>
+
+                    <p>
+                        Contact Toowoomba Jujitsu Kai to ask about
+                        current classes, who can participate, what
+                        to bring and how to get started.
+                    </p>
+
+                    <a href="#contact" class="button">
+                        Enquire about classes ↗
+                    </a>
+
+                    <p class="small-note">
+                        Please confirm class availability and any
+                        participation requirements with the dojo.
+                    </p>
+                </aside>
+
+            </div>
+        </section>
+
+
+        <!-- Call to action -->
+        <section class="section cta">
+            <div class="container cta-inner">
+
+                <div class="reveal">
+                    <p class="eyebrow">Your journey starts here</p>
+
+                    <h2>
+                        Make your next move
+                        <span class="accent">a meaningful one.</span>
+                    </h2>
+
+                    <p>
+                        Whether you are exploring martial arts for the
+                        first time or looking to continue your training,
+                        get in touch to learn more about our dojo.
+                    </p>
+                </div>
+
+                <a href="#contact" class="button reveal">
+                    Contact the dojo ↗
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- FAQ -->
+        <section class="section" id="faq">
+            <div class="container faq-layout">
+
+                <div class="faq-intro reveal">
+                    <p class="eyebrow">Good to know</p>
+
+                    <h2>
+                        A few things
+                        <span class="accent">you might wonder.</span>
+                    </h2>
+
+                    <p>
+                        Have a question before getting in touch?
+                        Here are some useful starting points.
+                    </p>
+                </div>
+
+                <div class="faq-list reveal">
+
+                    <div class="faq-item">
+                        <button class="faq-question"
+                                type="button"
+                                aria-expanded="false">
+                            <span>Do I need martial arts experience?</span>
+                            <span aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" hidden>
+                            <p>
+                                Ask the dojo about its beginner options
+                                and the most suitable class for your
+                                experience level.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question"
+                                type="button"
+                                aria-expanded="false">
+                            <span>What should I bring to a class?</span>
+                            <span aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" hidden>
+                            <p>
+                                Contact the dojo before attending to
+                                confirm suitable clothing, equipment
+                                and any other requirements.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question"
+                                type="button"
+                                aria-expanded="false">
+                            <span>How do I find class times?</span>
+                            <span aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" hidden>
+                            <p>
+                                Get in touch for the current timetable,
+                                class availability and details about
+                                attending your first session.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question"
+                                type="button"
+                                aria-expanded="false">
+                            <span>How do I get started?</span>
+                            <span aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" hidden>
+                            <p>
+                                Contact Toowoomba Jujitsu Kai and ask
+                                about getting involved. The dojo can
+                                explain the next steps.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section class="section contact" id="contact">
+            <div class="container contact-grid">
+
+                <div class="contact-copy reveal">
+                    <p class="eyebrow">Let's connect</p>
+
+                    <h2>
+                        Ready to begin
+                        <span class="accent">your journey?</span>
+                    </h2>
+
+                    <p>
+                        Want to learn more about Toowoomba Jujitsu Kai?
+                        Get in touch to ask about training, the dojo
+                        and how you can get involved.
+                    </p>
+
+                    <p>
+                        We look forward to helping you take the next step.
+                    </p>
+                </div>
+
+                <div class="contact-details reveal">
+
+                    <div class="contact-detail">
+                        <strong>Location</strong>
+                        <p>Toowoomba, Queensland, Australia</p>
+                        <p>Contact us for the training venue.</p>
+                    </div>
+
+                    <div class="contact-detail">
+                        <strong>Classes and enquiries</strong>
+                        <p>
+                            Please add your preferred contact email,
+                            telephone number or social media page here.
+                        </p>
+                    </div>
+
+                    <div class="contact-detail">
+                        <strong>Stay connected</strong>
+                        <p>
+                            Follow the dojo's official social media
+                            pages for news and updates.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+
+            <a href="#home" class="brand">
+                <span class="brand-mark">KAI</span>
+                <span class="brand-name">
+                    Toowoomba Jujitsu Kai
+                    <span>DISCIPLINE · RESPECT · GROWTH</span>
+                </span>
+            </a>
+
+            <p>
+                © <span id="year"></span> Toowoomba Jujitsu Kai.
+                All rights reserved.
+            </p>
+
+            <a href="#home">Back to top ↑</a>
+
+        </div>
+    </footer>
+
+
+    <script>
+        // Mobile navigation
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", () => {
+            const isOpen = navLinks.classList.toggle("open");
+
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
+            menuToggle.textContent = isOpen ? "Close ×" : "Menu ☰";
+        });
+
+        // Close mobile menu after selecting a link
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("open");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.textContent = "Menu ☰";
+            });
+        });
+
+        // Expandable FAQ questions
+        document.querySelectorAll(".faq-question").forEach(button => {
+            button.addEventListener("click", () => {
+                const answer = button.nextElementSibling;
+                const isExpanded =
+                    button.getAttribute("aria-expanded") === "true";
+
+                button.setAttribute(
+                    "aria-expanded",
+                    String(!isExpanded)
+                );
+
+                answer.hidden = isExpanded;
+                button.lastElementChild.textContent =
+                    isExpanded ? "+" : "−";
+            });
+        });
+
+        // Automatically update the copyright year
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+        // Reveal sections as they enter the screen
+        const revealElements = document.querySelectorAll(".reveal");
+
+        if ("IntersectionObserver" in window) {
+            const observer = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                { threshold: 0.12 }
+            );
+
+            revealElements.forEach(element => {
+                observer.observe(element);
+            });
+        } else {
+            revealElements.forEach(element => {
+                element.classList.add("visible");
+            });
+        }
+    </script>
+
+</body>
+</html>
