@@ -17,16 +17,19 @@
 
     <style>
         :root {
-            --black: #111111;
-            --dark: #191919;
-            --panel: #222222;
-            --white: #f7f5f0;
-            --muted: #b7b5b0;
-            --red: #d83932;
-            --red-dark: #a92520;
-            --line: rgba(255,255,255,0.12);
-            --width: 1180px;
-        }
+        --black: #141816;       /* Main background */
+        --dark: #202923;        /* Section backgrounds */
+        --panel: #29332c;       /* Cards and panels */
+        --white: #f4f0e7;       /* Main text */
+        --muted: #b7c0b7;       /* Secondary text */
+    
+        --green: #477653;       /* Primary accent */
+        --green-dark: #355b3e;  /* Button hover */
+        --gold: #c5a45d;        /* Secondary accent */
+    
+        --line: rgba(244,240,231,0.12);
+        --width: 1180px;
+    }
 
         * {
             box-sizing: border-box;
@@ -70,7 +73,7 @@
         }
 
         .eyebrow {
-            color: var(--red);
+            color: var(--green);
             font-size: 0.76rem;
             font-weight: 700;
             letter-spacing: 0.2em;
@@ -118,7 +121,7 @@
         }
 
         .accent {
-            color: var(--red);
+            color: var(--green);
         }
 
         .button {
@@ -128,18 +131,18 @@
             gap: 12px;
             min-height: 52px;
             padding: 14px 24px;
-            background: var(--red);
+            background: var(--green);
             color: white;
             font-size: 0.82rem;
             font-weight: 700;
             letter-spacing: 0.06em;
             text-transform: uppercase;
-            border: 1px solid var(--red);
+            border: 1px solid var(--green);
             transition: background 0.2s, transform 0.2s;
         }
 
         .button:hover {
-            background: var(--red-dark);
+            background: var(--green-dark);
             transform: translateY(-2px);
         }
 
@@ -194,7 +197,7 @@
             height: 44px;
             display: grid;
             place-items: center;
-            background: var(--red);
+            background: var(--green);
             color: white;
             font-family: "Barlow Condensed", sans-serif;
             font-size: 1.5rem;
@@ -212,7 +215,7 @@
 
         .brand-name span {
             display: block;
-            color: var(--muted);
+            color: var(--gold);
             font-family: "DM Sans", sans-serif;
             font-size: 0.64rem;
             font-weight: 500;
@@ -239,7 +242,7 @@
 
         .nav-links .nav-cta {
             padding: 12px 17px;
-            background: var(--red);
+            background: var(--green);
             color: white;
         }
 
@@ -283,7 +286,7 @@
             background: linear-gradient(
                 135deg,
                 transparent 55%,
-                rgba(216,57,50,0.12)
+                rgba(71,118,83,0.18)
             );
         }
 
@@ -302,7 +305,7 @@
             content: "";
             width: 35px;
             height: 2px;
-            background: var(--red);
+            background: var(--green);
         }
 
         .hero h1 {
@@ -310,7 +313,7 @@
         }
 
         .hero h1 span {
-            color: var(--red);
+            color: var(--green);
             display: block;
         }
 
@@ -339,7 +342,7 @@
         /* Intro strip */
 
         .intro-strip {
-            background: var(--red);
+            background: var(--green);
             padding: 20px 0;
         }
 
@@ -385,7 +388,7 @@
             content: "";
             position: absolute;
             inset: 18px -18px -18px 18px;
-            border: 1px solid var(--red);
+            border: 1px solid var(--green);
             z-index: -1;
         }
 
@@ -396,7 +399,7 @@
             right: 24px;
             padding: 20px;
             background: rgba(17,17,17,0.88);
-            border-left: 3px solid var(--red);
+            border-left: 3px solid var(--green);
         }
 
         .about-caption strong {
@@ -434,11 +437,11 @@
 
         .card:hover {
             transform: translateY(-5px);
-            border-color: var(--red);
+            border-color: var(--green);
         }
 
         .card-number {
-            color: var(--red);
+            color: var(--gold);
             font-family: "Barlow Condensed", sans-serif;
             font-size: 2.6rem;
             font-weight: 700;
@@ -480,14 +483,14 @@
 
         .training-list li::before {
             content: "↗";
-            color: var(--red);
+            color: var(--gold);
             font-size: 1.15rem;
             font-weight: 700;
         }
 
         .training-panel {
             background: var(--panel);
-            border-top: 3px solid var(--red);
+            border-top: 3px solid var(--green);
             padding: 35px;
         }
 
@@ -573,7 +576,7 @@
         }
 
         .faq-question span:last-child {
-            color: var(--red);
+            color: var(--gold);
             font-size: 1.5rem;
         }
 
@@ -610,7 +613,7 @@
         .contact-detail {
             padding: 23px;
             background: var(--panel);
-            border-left: 3px solid var(--red);
+            border-left: 3px solid var(--green);
         }
 
         .contact-detail strong {
